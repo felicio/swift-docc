@@ -139,6 +139,37 @@ https://www.example.com/MyProject/Base/Path/documentation/MyNewPackage/MyNewProt
                        your custom base path
 ```
 
+To find the value to pass, start from the URL of the folder on your website
+that holds the archive's top-level `index.html` file, and use the path that
+follows the domain name. You don't need a leading or trailing slash. For
+example, if your website serves the contents of `MyNewPackage.doccarchive` at
+`https://www.example.com/MyProject/docs/`, pass
+`--hosting-base-path MyProject/docs`.
+
+DocC writes the pages for each module to a lowercase folder inside the
+archive's `documentation` folder:
+
+```
+MyNewPackage.doccarchive/
+├── index.html
+├── theme-settings.json
+├── data/
+│   └── documentation/
+│       └── mynewpackage.json
+└── documentation/
+    └── mynewpackage/
+        └── index.html
+```
+
+With that base path, the landing page for the module is at the following URL:
+
+```
+https://www.example.com/MyProject/docs/documentation/mynewpackage/
+```
+
+If the base path doesn't match the URL, the browser requests the web app's
+scripts and styles from the wrong location, and the web app doesn't load.
+
 You can also configure the base path through the `--hosting-base-path` option
 when [building documentation using the SwiftPM DocC Plugin][plugin-docs] or via
 the `DOCC_HOSTING_BASE_PATH` build setting when building documentation in Xcode.
