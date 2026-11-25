@@ -167,7 +167,7 @@ With that base path, the landing page for the module is at the following URL:
 https://www.example.com/MyProject/docs/documentation/mynewpackage/
 ```
 
-If the base path doesn't match the URL, the browser requests the web app's
+If the base path doesn't match the archive folder's path, the browser requests the web app's
 scripts and styles from the wrong location, and the web app doesn't load.
 
 You can also configure the base path through the `--hosting-base-path` option
