@@ -140,7 +140,7 @@ https://www.example.com/MyProject/Base/Path/documentation/MyNewPackage/MyNewProt
 ```
 
 To find the value to pass, start from the URL of the folder on your website
-that holds the archive's top-level `index.html` file, and use the path that
+that holds the archive's top-level `index.html` file. Use the path that
 follows the domain name. You don't need a leading or trailing slash. For
 example, if your website serves the contents of `MyNewPackage.doccarchive` at
 `https://www.example.com/MyProject/docs/`, pass
