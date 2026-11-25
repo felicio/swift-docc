@@ -83,6 +83,8 @@ and publishing your documentation to your [website](https://swiftlang.github.io/
 
 You can also use the DocC command-line interface, as described in <doc:distributing-documentation-to-other-developers>.
 
+To link each symbol's declaration to its source file in your repository, see <doc:distributing-documentation-to-other-developers#Include-Links-to-your-Projects-Sources>.
+
 ## See Also
 
 - <doc:writing-symbol-documentation-in-your-source-files>
